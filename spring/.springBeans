@@ -9,6 +9,9 @@
 	<configs>
 		<config>src/main/resources/03_message.xml</config>
 		<config>src/main/resources/04_1_beanCreate.xml</config>
+		<config>src/main/resources/04_2_beanAttribute.xml</config>
+		<config>src/main/resources/04_3_beanAnnotation.xml</config>
+		<config>src/main/resources/05_1_di.xml</config>
 	</configs>
 	<autoconfigs>
 		<config>src/main/webapp/WEB-INF/spring/appServlet/servlet-context.xml</config>
