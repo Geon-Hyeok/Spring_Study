@@ -3,15 +3,13 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/maven-v4_0_0.xsd">
 	<!-- Maven : 빌드 툴(Build Tool) - 프로젝트의 라이브러리를 관리하는 프로그램 -->
-	<!-- pom.xml : 메이븐을 이용하여 프로젝트에 라이브러리를 빌드 처리하기 위한 정보를 제공하는 환경설정파일  -->
+	<!-- pom.xml : 메이븐을 이용하여 프로젝트에 라이브러리를 빌드 처리하기 위한 정보를 제공하는 환경설정파일 -->
 	<!-- => 로컬 저장소의 라이브러리 파일을 제공받아 프로젝트에 빌드 처리 -->
-	<!-- => 로컬 저장소에 라이브러리 파일이 없는 경우 메이븐 저장소에서 라이브러리 파일을 
-	다운로드 받아 로컬 저장소에 저장 -->
+	<!-- => 로컬 저장소에 라이브러리 파일이 없는 경우 메이븐 저장소에서 라이브러리 파일을 다운로드 받아 로컬 저장소에 저장 -->
 	<!-- 로컬 저장소(Local Repository) : 프로젝트에 빌드 처리될 라이브러리 파일을 저장하는 폴더 -->
 	<!-- => 기본적으로 사용자 폴더의 .m2 폴더를 로컬 저장소 사용 -->
-	<!-- => 라이브러리 파일에 문제가 있어 프로그램 실행시 에러가 발생될 경우 이클립스 종료 후
-	해당 라이브러리	파일(폴더)을
-	삭제하고 이클립스 재실행 -->
+	<!-- => 라이브러리 파일에 문제가 있어 프로그램 실행시 에러가 발생될 경우 이클립스 종료 후 해당 라이브러리 파일(폴더)을 
+		삭제하고 이클립스 재실행 -->
 	<!-- 메이블 저장소(Maven Repository) : 라이브러리 파일이 저장된 인터넷상의 저장소 -->
 	<!-- => https://mvnrepository.com 사이트 참조 -->
 
@@ -38,8 +36,8 @@
 		<!-- Spring -->
 		<!-- => Spring 프레임워크를 이용하여 프로그램을 작성하기 위해 필요한 기능을 제공하는 라이브러리 -->
 		<!-- dependency : 라이브러리 파일을 제공받아 프로젝트에 빌드 처리하기 위한 엘리먼트 -->
-		<!-- => 라이브러리 의존 관계에 의해 다른 라이브러리 파일을 프로젝트에 자동으로 빌드 처리 - 의존 전이(Transitive
-		Dependencies) -->
+		<!-- => 라이브러리 의존 관계에 의해 다른 라이브러리 파일을 프로젝트에 자동으로 빌드 처리 - 의존 전이(Transitive 
+			Dependencies) -->
 		<dependency>
 			<!-- groupId : 라이브러리 파일을 제공하는 그룹의 도메인을 설정하기 위한 엘리먼트 -->
 			<groupId>org.springframework</groupId>
@@ -73,9 +71,7 @@
 		</dependency>
 
 		<!-- https://mvnrepository.com/artifact/org.aspectj/aspectjweaver -->
-		<!-- => AspectJ 컴파일러로 핵심관심코드와 횡단관심코드가 결합된 클래스(Proxy 클래스)를
-		생성하기 위한
-		라이브러리 -->
+		<!-- => AspectJ 컴파일러로 핵심관심코드와 횡단관심코드가 결합된 클래스(Proxy 클래스)를 생성하기 위한 라이브러리 -->
 		<dependency>
 			<groupId>org.aspectj</groupId>
 			<artifactId>aspectjweaver</artifactId>
@@ -166,9 +162,8 @@
 		</dependency>
 
 		<!-- https://mvnrepository.com/artifact/xerces/xercesImpl -->
-		<!-- => 로그 구현체가 환경설정파일(log4j.xml)을 읽어 실행할 때 파일 경로에 인식할 수
-		 없는 문자가 존재하면
-		예외 발생 - 파일 경로를 부호화 처리하는 기능을 제공하는 라이브러리 -->
+		<!-- => 로그 구현체가 환경설정파일(log4j.xml)을 읽어 실행할 때 파일 경로에 인식할 수 없는 문자가 존재하면 예외 
+			발생 - 파일 경로를 부호화 처리하는 기능을 제공하는 라이브러리 -->
 		<dependency>
 			<groupId>xerces</groupId>
 			<artifactId>xercesImpl</artifactId>
@@ -184,8 +179,7 @@
 			<scope>provided</scope>
 		</dependency>
 
-		<!--
-		https://mvnrepository.com/artifact/org.springframework/spring-context-support -->
+		<!-- https://mvnrepository.com/artifact/org.springframework/spring-context-support -->
 		<!-- => Spring Context의 확장 기능을 제공하는 라이브러리 -->
 		<dependency>
 			<groupId>org.springframework</groupId>
@@ -219,7 +213,7 @@
 		</dependency>
 
 		<!-- https://mvnrepository.com/artifact/org.mybatis/mybatis -->
-		<!-- => Mybatis 프레임워크 기능을 제공하기 위한 라이브러리  -->
+		<!-- => Mybatis 프레임워크 기능을 제공하기 위한 라이브러리 -->
 		<dependency>
 			<groupId>org.mybatis</groupId>
 			<artifactId>mybatis</artifactId>
@@ -227,18 +221,16 @@
 		</dependency>
 
 		<!-- https://mvnrepository.com/artifact/org.mybatis/mybatis-spring -->
-		<!-- => Spring 프레임워크에서 Mybatis 프레임워크 기능을 제공하기 위한 라이브러리  -->
+		<!-- => Spring 프레임워크에서 Mybatis 프레임워크 기능을 제공하기 위한 라이브러리 -->
 		<dependency>
 			<groupId>org.mybatis</groupId>
 			<artifactId>mybatis-spring</artifactId>
 			<version>3.0.2</version>
 		</dependency>
 
-		<!--
-		https://mvnrepository.com/artifact/org.bgee.log4jdbc-log4j2/log4jdbc-log4j2-jdbc4 -->
-		<!-- => 퍼시스턴스 프레임워크(Mybatis)에 의해 발생되는 로그 이벤트를 Spring 프레임워크의
-		로그 구현체로
-		기록하기 위한 기능을 제공하는 라이브러리 -->
+		<!-- https://mvnrepository.com/artifact/org.bgee.log4jdbc-log4j2/log4jdbc-log4j2-jdbc4 -->
+		<!-- => 퍼시스턴스 프레임워크(Mybatis)에 의해 발생되는 로그 이벤트를 Spring 프레임워크의 로그 구현체로 기록하기 
+			위한 기능을 제공하는 라이브러리 -->
 		<dependency>
 			<groupId>org.bgee.log4jdbc-log4j2</groupId>
 			<artifactId>log4jdbc-log4j2-jdbc4</artifactId>
@@ -253,6 +245,15 @@
 			<version>${org.springframework-version}</version>
 			<!-- <scope>test</scope> -->
 		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/org.apache.tiles/tiles-extras -->
+		<!-- => TilesView 기능을 제공하기 위한 라이브러리 -->
+		<dependency>
+			<groupId>org.apache.tiles</groupId>
+			<artifactId>tiles-extras</artifactId>
+			<version>3.0.8</version>
+		</dependency>
+
 
 	</dependencies>
 
